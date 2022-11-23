@@ -1,0 +1,111 @@
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+#content {
+   display: grid;
+   text-align: center;
+   height: 100vh;
+   grid-template-rows: 1fr 0.5fr 2fr 0.5fr;
+}
+
+.title {
+    font-size: 5rem;
+    font-weight: bold;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    background-color: goldenrod;
+}
+.tagline {
+    font-size: 2.5rem;
+    display: flex;
+    border-top: 5px double rgb(179, 179, 141);
+    justify-content: center;
+}
+.cards {
+    font-size: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    color: beige;
+    
+}
+
+.cards div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer {
+    background-color: rgb(133, 43, 43);
+    font-size: 2rem;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    color: aliceblue;
+    border-top: 5px solid goldenrod;
+}
+
+.about {
+    background-image: url('rome.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.food {
+    background-image: url('pasta.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.drinks {
+    background-image: url('bottle.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+.aboutTab {
+    display: grid;
+    grid-template-rows: 1fr 1.5fr 0.5fr;
+}
+.abouthead{
+    font-size: 2.5rem;
+}
+.aboutinfo {
+    font-size: 1.5rem;
+}
+.aboutclose {
+    font-size: 2rem;
+}
+
+.foodtab {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 1.5rem;
+}
+.foodhead{
+    font-size: 2.5rem;
+    grid-column: 1/3;
+}
+.foodclose {
+    font-size: 2rem;
+    grid-column: 1/3;
+}
+
+
+.drinkstab {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 1.5rem;
+}
+.drinkshead {
+    font-size: 2.5rem;
+    grid-column: 1/3;
+}
+.drinksclose {
+    font-size: 2rem;
+    grid-column: 1/3;
+}
